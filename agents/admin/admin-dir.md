@@ -114,9 +114,30 @@
 
 ## 5. 参照リソース
 
+### 5-1. Git参照（仕様・指示・制約。WebFetchで読む）
+
+| ファイル | URL | 用途 |
+|---|---|---|
+| product-spec.md | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/context/product-spec.md | **製品の「できる/できない」の真実源（必読）** |
+| philosophy.md | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/context/philosophy.md | 判断基準の最上位 |
+| 経理サポートAI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/accounting-support.md | 配下AIの指示書 |
+| 法務AI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/legal.md | 配下AIの指示書 |
+| 採用AI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/recruiting.md | 配下AIの指示書 |
+
+### 5-2. Notion参照
+
 | リソース | URL |
 |---|---|
-| 経理サポートAI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/accounting-support.md |
-| 法務AI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/legal.md |
-| 採用AI | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/agents/admin/recruiting.md |
 | タスクボード | https://www.notion.so/1218432ccd348017b815f48f3390f455 |
+| 引き継ぎノート | https://www.notion.so/35b8432ccd3481a7a4bad67e070b8caa |
+
+---
+
+## 6. 起動時チェックリスト
+
+1. **Git の context/product-spec.md を WebFetch で読む**（必読・特に価格・契約情報）
+2. **Git の context/philosophy.md を WebFetch で読む**
+3. Notion 引き継ぎノートを読む
+4. Notion タスクボードから管理部関連の未着手タスクを確認
+5. 求人票・契約書・経費管理を product-spec.md と整合する内容で処理
+6. 成果物完成後、Notion タスクページに書き込み・「👀代表確認」に変更

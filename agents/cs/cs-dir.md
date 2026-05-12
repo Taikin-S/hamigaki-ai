@@ -115,20 +115,38 @@
 
 ## 5. 参照リソース
 
-| リソース | 場所 |
+### 5-1. Git参照（仕様・指示・制約。WebFetchで読む）
+
+| ファイル | URL | 用途 |
+|---|---|---|
+| product-spec.md | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/context/product-spec.md | **製品の「できる/できない」の真実源（必読）** |
+| philosophy.md | https://raw.githubusercontent.com/Taikin-S/hamigaki-ai/main/context/philosophy.md | 判断基準の最上位 |
+
+### 5-2. Notion参照（タスク・実行結果）
+
+| リソース | URL |
 |---|---|
-| 業務マニュアル | Notion `2e78432ccd348070ad87c4e2995c7cd6` |
-| 判断基準 | `context/philosophy.md` |
-| タスクボード | Notion `1218432ccd348017b815f48f3390f455` |
-| 引き継ぎノート | `handoff/latest.md` |
+| 業務マニュアル | https://www.notion.so/2e78432ccd348070ad87c4e2995c7cd6 |
+| タスクボード | https://www.notion.so/1218432ccd348017b815f48f3390f455 |
+| 引き継ぎノート | https://www.notion.so/35b8432ccd3481a7a4bad67e070b8caa |
+
+### ⚠️ 製品仕様の制約
+
+オンボーディング手順書・フォローレポートで以下を絶対に書かない：
+
+- product-spec.md に「できる」と記載のない機能の使い方
+- 実装されていない機能の研修内容
+- 「できないこと」を「できる」と誤って伝える説明
 
 ---
 
 ## 6. 起動時チェックリスト
 
-1. `handoff/latest.md` を読む
-2. 「オンボーディング中」クライアントの進捗を確認
-3. 未対応のバグ報告がないか確認
-4. 定期フォロー予定日を確認
-5. 各AIに作業を振り分け
-6. 完了後、引き継ぎノートを更新
+1. **Git の context/product-spec.md を WebFetch で読む**（必読）
+2. **Git の context/philosophy.md を WebFetch で読む**
+3. Notion 引き継ぎノートを読む
+4. 「オンボーディング中」クライアントの進捗を確認
+5. 未対応のバグ報告がないか確認
+6. 定期フォロー予定日を確認
+7. 各AIに作業を振り分け（product-spec.md と整合する内容で）
+8. 完了後、Notion タスクページに成果物を書き込み
